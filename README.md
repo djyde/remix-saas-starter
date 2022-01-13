@@ -1,34 +1,32 @@
-# Welcome to Remix!
+# remix-saas-starter
 
-- [Remix Docs](https://remix.run/docs)
+This boilerplate is based on the Remix official Vercel starter project.
 
-## Deployment
+## Features
 
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
+- [x] Prisma
+- [x] ChakraUI
 
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
+WIP...
 
-```sh
-npm i -g vercel
-vercel
+## Installation
+
+```bash
+$ pnpm i
+
+# or
+npm i
+
+# or
+yarn
 ```
 
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
+## Usage
 
-## Development
+### Prisma
 
-To run your Remix app locally, make sure your project's local dependencies are installed:
+```bash
+$ pnpx prisma generate
 
-```sh
-npm install
+$ pnpx prisma blablabla
 ```
-
-Afterwards, start the Remix development server like so:
-
-```sh
-npm run dev
-```
-
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
