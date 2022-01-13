@@ -7,6 +7,7 @@ import {
   ScrollRestoration
 } from "remix";
 import type { MetaFunction } from "remix";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
@@ -21,12 +22,14 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
-      </body>
+      <ChakraProvider>
+        <body>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          {process.env.NODE_ENV === "development" && <LiveReload />}
+        </body>
+      </ChakraProvider>
     </html>
   );
 }
